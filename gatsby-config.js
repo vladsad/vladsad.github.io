@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
     title: "Vlad Sadretdinov",
+    siteUrl: "https://vladsad.github.io",
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "non-real-id",
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-google-analytics",
+    //   options: {
+    //     trackingId: "non-real-id",
+    //   },
+    // },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
