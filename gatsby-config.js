@@ -21,7 +21,16 @@ module.exports = {
       },
     },
     "gatsby-transformer-remark",
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          default: require.resolve(`./src/components/layout.js`),
+        },
+      },
+    },
+    // "gatsby-transformer-javascript-frontmatter",
+    "gatsby-plugin-sass",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
