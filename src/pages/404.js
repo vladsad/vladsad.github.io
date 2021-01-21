@@ -5,7 +5,7 @@ const NotFoundPage = () => {
   return (
     <Layout>
       <span role="img" aria-label="Pensive emoji">
-        😔
+        <div style={{ fontSize: "20vh", textAlign: "center" }}>😔</div>
       </span>{" "}
     </Layout>
   );

@@ -1,36 +1,60 @@
 @import "./../variables";
 
-header {
-    display: flex;
-    flex-direction: row;
-}
-
-nav {
-    margin-left: auto;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-
-    a {
-        transition: text-shadow .3s, color .1s ease-in-out;
-        padding: 4px 12px;
-        margin: 0 0 0 5px;
-        font-size: 18px;
-        font-weight: 500;
-        color: $grey;
+.header {
+    &_inner {  
+        max-width: $maxWidthInner;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
-      
-    a:hover {
-        text-shadow: 0 0 .65px #333, 0 0 .65px #333;
-        /* use the line below if you want a more intense effect */
-        /* text-shadow: 0 0 .9px #333, 0 0 .9px #333, 0 0 .9px #333; */
+
+    &-logo {
+        display: flex;
+        align-items: center;
+
+        &_img {
+            font-size: 40px;
+            margin-right: 5px;
+            line-height: 1;
+        }
+
+        &_text-top {
+            font-size: 20px;
+            font-weight: bold;
+        }
     }
-    
-    .activeLink {
-        color: $black;
-        font-weight: bold;
+
+    & .nav {
+        margin-left: auto;
+
+        &_list {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+
+        &_element {
+            //
+        }
+
+        &_link {
+            transition: text-shadow .3s, color .1s ease-in-out;
+            padding: 4px 12px;
+            margin: 0 0 0 5px;
+            font-size: 18px;
+            font-weight: 500;
+            color: $grey;
+
+            &:hover { 
+                color: $black;
+                border-bottom: 2px solid $black
+            }
+
+            &.activeLink {
+                color: $black;
+                border-bottom: 2px solid $black
+            }
+        }
     }
 }
