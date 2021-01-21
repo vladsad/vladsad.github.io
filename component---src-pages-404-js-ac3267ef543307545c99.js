@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{w2l6:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),i=t("Bl7J");n.default=function(){return l.a.createElement(i.a,null,l.a.createElement("span",{role:"img","aria-label":"Pensive emoji"},l.a.createElement("div",{style:{fontSize:"20vh",textAlign:"center"}},"😔"))," ")}}}]);
+//# sourceMappingURL=component---src-pages-404-js-ac3267ef543307545c99.js.map
