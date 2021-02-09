@@ -9,10 +9,10 @@ const Header = (props) => {
     <header className="header">
       <div className="header_inner">
         <div className="header-logo">
-          <span className="header-logo_img">👦🏼</span>
+          <span className="header-logo_img">🤓</span>
           <div>
             <div className="header-logo_text-top">Vladislav Sadretdinov</div>
-            <div className="header-logo_text-bottom">Developer / Engineer</div>
+            <div className="header-logo_text-bottom">Developer | Engineer</div>
           </div>
         </div>
         <nav className="nav">
@@ -31,7 +31,7 @@ const Header = (props) => {
                 Articles
               </Link>
             </li>
-            <li className="nav_element">
+            {/* <li className="nav_element">
               <Link
                 to="/notes"
                 className="nav_link"
@@ -39,7 +39,7 @@ const Header = (props) => {
               >
                 Notes
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
